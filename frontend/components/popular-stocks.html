@@ -1,0 +1,172 @@
+<!-- Popular Stocks Component -->
+<section class="popular-stocks-section py-5">
+  <div class="container">
+    <div class="section-header mb-5">
+      <h2 class="section-title">Most Analyzed Stocks</h2>
+      <p class="section-subtitle">Trending stocks on BigBully AI this week</p>
+    </div>
+
+    <div class="stocks-grid">
+      <!-- Stock Card 1 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">TCS</div>
+          <div class="stock-info">
+            <h3 class="stock-name">TCS</h3>
+            <p class="stock-company">Tata Consultancy</p>
+          </div>
+          <span class="stock-badge trending">🔥 Trending</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹3,450</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value positive">+2.5%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="tcsChart"></canvas>
+        </div>
+        <a href="/stock/TCS" class="stock-cta">View Analysis →</a>
+      </div>
+
+      <!-- Stock Card 2 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">INFY</div>
+          <div class="stock-info">
+            <h3 class="stock-name">INFY</h3>
+            <p class="stock-company">Infosys Limited</p>
+          </div>
+          <span class="stock-badge popular">⭐ Popular</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹1,890</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value positive">+1.8%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="infyChart"></canvas>
+        </div>
+        <a href="/stock/INFY" class="stock-cta">View Analysis →</a>
+      </div>
+
+      <!-- Stock Card 3 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">HDFCBANK</div>
+          <div class="stock-info">
+            <h3 class="stock-name">HDFCBANK</h3>
+            <p class="stock-company">HDFC Bank Limited</p>
+          </div>
+          <span class="stock-badge popular">⭐ Popular</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹1,567</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value negative">-0.5%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="hdfcChart"></canvas>
+        </div>
+        <a href="/stock/HDFCBANK" class="stock-cta">View Analysis →</a>
+      </div>
+
+      <!-- Stock Card 4 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">RELIANCE</div>
+          <div class="stock-info">
+            <h3 class="stock-name">RELIANCE</h3>
+            <p class="stock-company">Reliance Industries</p>
+          </div>
+          <span class="stock-badge trending">🔥 Trending</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹2,890</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value positive">+3.2%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="relianceChart"></canvas>
+        </div>
+        <a href="/stock/RELIANCE" class="stock-cta">View Analysis →</a>
+      </div>
+
+      <!-- Stock Card 5 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">WIPRO</div>
+          <div class="stock-info">
+            <h3 class="stock-name">WIPRO</h3>
+            <p class="stock-company">Wipro Limited</p>
+          </div>
+          <span class="stock-badge popular">⭐ Popular</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹456</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value positive">+1.2%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="wiproChart"></canvas>
+        </div>
+        <a href="/stock/WIPRO" class="stock-cta">View Analysis →</a>
+      </div>
+
+      <!-- Stock Card 6 -->
+      <div class="stock-card">
+        <div class="stock-header">
+          <div class="stock-logo">ICICIBANK</div>
+          <div class="stock-info">
+            <h3 class="stock-name">ICICIBANK</h3>
+            <p class="stock-company">ICICI Bank Limited</p>
+          </div>
+          <span class="stock-badge popular">⭐ Popular</span>
+        </div>
+        <div class="stock-metrics">
+          <div class="metric">
+            <span class="label">Price</span>
+            <span class="value">₹987</span>
+          </div>
+          <div class="metric">
+            <span class="label">Change</span>
+            <span class="value positive">+0.8%</span>
+          </div>
+        </div>
+        <div class="stock-chart">
+          <canvas class="mini-chart" id="iciciChart"></canvas>
+        </div>
+        <a href="/stock/ICICIBANK" class="stock-cta">View Analysis →</a>
+      </div>
+    </div>
+
+    <!-- View All Button -->
+    <div class="text-center mt-5">
+      <a href="/stocks" class="btn btn-lg btn-outline-primary">View All Stocks (5000+)</a>
+    </div>
+  </div>
+</section>
