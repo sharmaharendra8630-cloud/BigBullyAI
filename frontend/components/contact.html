@@ -1,0 +1,108 @@
+<!-- Contact Page Component -->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="contact-header text-center mb-5">
+      <h1 class="contact-title">Get in Touch</h1>
+      <p class="contact-subtitle">We'd love to hear from you. Send us a message!</p>
+    </div>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contactName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">Subject</label>
+            <select class="form-control" id="contactSubject" required>
+              <option value="">Select a subject...</option>
+              <option value="feature">Feature Request</option>
+              <option value="bug">Bug Report</option>
+              <option value="support">Technical Support</option>
+              <option value="business">Business Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="contactConsent" class="form-check-input" required>
+            <label for="contactConsent" class="form-check-label">
+              I agree to be contacted regarding my inquiry
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-wrapper">
+        <div class="info-card">
+          <div class="info-icon">📧</div>
+          <h3 class="info-title">Email</h3>
+          <p class="info-content">support@bigbullyai.com</p>
+          <a href="mailto:support@bigbullyai.com" class="info-link">Send Email →</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📱</div>
+          <h3 class="info-title">Phone</h3>
+          <p class="info-content">+91 98765 43210</p>
+          <p class="info-hours">Mon-Fri, 9AM-6PM IST</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <h3 class="info-title">Office</h3>
+          <p class="info-content">Bangalore, India</p>
+          <p class="info-hours">Tech Hub, Whitefield</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">💬</div>
+          <h3 class="info-title">Live Chat</h3>
+          <p class="info-content">Chat with our team</p>
+          <a href="#" class="info-link">Start Chat →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="contact-faq mt-5">
+      <h2 class="text-center mb-4">Common Questions</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How quickly will I receive a response?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer" style="display: none;">
+            <p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, please use our live chat option.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can I report a bug?</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer" style="display: none;">
+            <p>Use the contact form and select "Bug Report" as the subject. Include detailed steps to reproduce the issue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
