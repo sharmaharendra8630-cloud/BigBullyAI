@@ -1,0 +1,142 @@
+<!-- Profile Page Component -->
+<section class="profile-section">
+  <div class="container py-5">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" alt="User Avatar">
+        <button class="avatar-edit">📷</button>
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">John Doe</h1>
+        <p class="profile-email">john@example.com</p>
+        <p class="profile-member">Member since January 2024</p>
+        <div class="profile-stats">
+          <div class="profile-stat">
+            <span class="stat-value">45</span>
+            <span class="stat-label">Analyzed Stocks</span>
+          </div>
+          <div class="profile-stat">
+            <span class="stat-value">12</span>
+            <span class="stat-label">Watchlists</span>
+          </div>
+          <div class="profile-stat">
+            <span class="stat-value">2.5K</span>
+            <span class="stat-label">Total Views</span>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary">Edit Profile</button>
+    </div>
+
+    <!-- Profile Tabs -->
+    <ul class="nav nav-tabs profile-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab">
+          Personal Info
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="preferences-tab" data-bs-toggle="tab" data-bs-target="#preferences" type="button" role="tab">
+          Preferences
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button" role="tab">
+          Activity
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content profile-content">
+      <!-- Personal Info Tab -->
+      <div class="tab-pane fade show active" id="personal" role="tabpanel">
+        <div class="profile-card">
+          <h3 class="card-title">Personal Information</h3>
+          <form class="profile-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" value="John">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" value="Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" value="john@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" value="+91 98765 43210">
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Preferences Tab -->
+      <div class="tab-pane fade" id="preferences" role="tabpanel">
+        <div class="profile-card">
+          <h3 class="card-title">Preferences</h3>
+          <div class="preference-group">
+            <div class="preference-item">
+              <div class="preference-info">
+                <h4>Email Notifications</h4>
+                <p>Receive updates about your watched stocks</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="emailNotif" checked>
+                <label for="emailNotif"></label>
+              </div>
+            </div>
+            <div class="preference-item">
+              <div class="preference-info">
+                <h4>Research Updates</h4>
+                <p>Get notified about new AI insights</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="researchNotif" checked>
+                <label for="researchNotif"></label>
+              </div>
+            </div>
+            <div class="preference-item">
+              <div class="preference-info">
+                <h4>Dark Mode</h4>
+                <p>Use dark theme across BigBully AI</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="darkMode">
+                <label for="darkMode"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Tab -->
+      <div class="tab-pane fade" id="activity" role="tabpanel">
+        <div class="profile-card">
+          <h3 class="card-title">Recent Activity</h3>
+          <div class="activity-list">
+            <div class="activity-item">
+              <span class="activity-time">2 hours ago</span>
+              <p>Analyzed stock <strong>TCS</strong></p>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">5 hours ago</span>
+              <p>Added <strong>INFY</strong> to watchlist</p>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">1 day ago</span>
+              <p>Downloaded research report for <strong>HDFC Bank</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

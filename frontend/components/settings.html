@@ -1,0 +1,172 @@
+<!-- Settings Page Component -->
+<section class="settings-section">
+  <div class="container py-5">
+    <h1 class="section-title mb-4">Settings</h1>
+
+    <div class="settings-container">
+      <!-- Settings Sidebar -->
+      <aside class="settings-sidebar">
+        <div class="settings-nav">
+          <a href="#" class="settings-nav-item active" data-section="account">
+            ⚙️ Account
+          </a>
+          <a href="#" class="settings-nav-item" data-section="notifications">
+            🔔 Notifications
+          </a>
+          <a href="#" class="settings-nav-item" data-section="appearance">
+            🎨 Appearance
+          </a>
+          <a href="#" class="settings-nav-item" data-section="security">
+            🔒 Security
+          </a>
+          <a href="#" class="settings-nav-item" data-section="privacy">
+            👁️ Privacy
+          </a>
+          <a href="#" class="settings-nav-item" data-section="billing">
+            💳 Billing
+          </a>
+        </div>
+      </aside>
+
+      <!-- Settings Content -->
+      <main class="settings-content">
+        <!-- Account Settings -->
+        <div class="settings-panel active" id="account">
+          <h2 class="panel-title">Account Settings</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Account Information</h3>
+            <div class="setting-item">
+              <div class="setting-info">
+                <h4>Email</h4>
+                <p>john@example.com</p>
+              </div>
+              <button class="btn btn-sm btn-outline-primary">Change</button>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <h4>Username</h4>
+                <p>john_doe_45</p>
+              </div>
+              <button class="btn btn-sm btn-outline-primary">Change</button>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <h3 class="group-title">Password & Security</h3>
+            <div class="setting-item">
+              <div class="setting-info">
+                <h4>Password</h4>
+                <p>Last changed 3 months ago</p>
+              </div>
+              <button class="btn btn-sm btn-outline-primary">Change Password</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="settings-panel" id="notifications">
+          <h2 class="panel-title">Notification Preferences</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Email Notifications</h3>
+            <div class="setting-toggle">
+              <div class="toggle-info">
+                <h4>Stock Alerts</h4>
+                <p>Get notified when your watched stocks move</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="stockAlerts" checked>
+                <label for="stockAlerts"></label>
+              </div>
+            </div>
+            <div class="setting-toggle">
+              <div class="toggle-info">
+                <h4>Market Updates</h4>
+                <p>Daily market summary and insights</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="marketUpdates" checked>
+                <label for="marketUpdates"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appearance Settings -->
+        <div class="settings-panel" id="appearance">
+          <h2 class="panel-title">Appearance</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Theme</h3>
+            <div class="theme-options">
+              <div class="theme-option active">
+                <input type="radio" id="lightTheme" name="theme" value="light" checked>
+                <label for="lightTheme">☀️ Light</label>
+              </div>
+              <div class="theme-option">
+                <input type="radio" id="darkTheme" name="theme" value="dark">
+                <label for="darkTheme">🌙 Dark</label>
+              </div>
+              <div class="theme-option">
+                <input type="radio" id="autoTheme" name="theme" value="auto">
+                <label for="autoTheme">🔄 Auto</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Settings -->
+        <div class="settings-panel" id="security">
+          <h2 class="panel-title">Security Settings</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Two-Factor Authentication</h3>
+            <div class="setting-item">
+              <div class="setting-info">
+                <h4>2FA Status</h4>
+                <p>Enable for enhanced security</p>
+              </div>
+              <button class="btn btn-sm btn-primary">Enable 2FA</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Privacy Settings -->
+        <div class="settings-panel" id="privacy">
+          <h2 class="panel-title">Privacy Settings</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Data Visibility</h3>
+            <div class="setting-toggle">
+              <div class="toggle-info">
+                <h4>Public Profile</h4>
+                <p>Make your profile visible to other users</p>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" id="publicProfile">
+                <label for="publicProfile"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Billing Settings -->
+        <div class="settings-panel" id="billing">
+          <h2 class="panel-title">Billing</h2>
+          
+          <div class="settings-group">
+            <h3 class="group-title">Current Plan</h3>
+            <div class="setting-item">
+              <div class="setting-info">
+                <h4>Free Plan</h4>
+                <p>Upgrade to unlock premium features</p>
+              </div>
+              <button class="btn btn-sm btn-primary">View Plans</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>

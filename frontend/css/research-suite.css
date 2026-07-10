@@ -1,0 +1,256 @@
+.research-suite-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #001a4d;
+  text-align: center;
+}
+
+/* Research Tabs */
+.research-tabs {
+  border: none;
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.research-tabs .nav-link {
+  color: #6c757d !important;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.research-tabs .nav-link:hover {
+  background: #f8f9fa;
+  color: #7c3aed !important;
+}
+
+.research-tabs .nav-link.active {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+/* Research Content */
+.research-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.research-tab-content {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Research Cards */
+.research-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.research-card:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+}
+
+.research-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #001a4d;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Metrics */
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.metric-row:last-child {
+  border-bottom: none;
+}
+
+.metric-name {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-weight: 700;
+  color: #001a4d;
+  font-size: 0.95rem;
+}
+
+.metric-value.positive {
+  color: #10b981;
+}
+
+.metric-value.neutral {
+  color: #6c757d;
+}
+
+/* Risk Items */
+.risk-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.risk-item:last-child {
+  border-bottom: none;
+}
+
+.risk-name {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #f8f9fa;
+  color: #495057;
+}
+
+.risk-badge.risk-low {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.risk-badge.risk-medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.risk-badge.risk-high {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+/* Research Footer */
+.research-footer {
+  margin-top: 3rem;
+}
+
+.confidence-box {
+  background: linear-gradient(135deg, #f0f4ff 0%, #f5f3ff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e0e7ff;
+}
+
+.confidence-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.confidence-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.confidence-bar {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.confidence-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #7c3aed;
+}
+
+.disclaimer-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .research-suite-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .research-tabs {
+    flex-wrap: wrap;
+    padding: 0.75rem;
+  }
+
+  .research-tabs .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .research-content {
+    padding: 1.5rem;
+  }
+
+  .research-card {
+    padding: 1rem;
+  }
+
+  .confidence-box {
+    padding: 1.5rem;
+  }
+
+  .row {
+    gap: 1rem;
+  }
+}

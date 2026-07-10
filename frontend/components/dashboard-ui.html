@@ -1,0 +1,144 @@
+<!-- Dashboard UI Component -->
+<section class="dashboard-section">
+  <div class="container-fluid">
+    <!-- Sidebar -->
+    <div class="dashboard-container">
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title">Dashboard</h3>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item active">
+            <span class="nav-icon">📊</span>
+            <span class="nav-label">Overview</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📌</span>
+            <span class="nav-label">Watchlist</span>
+            <span class="badge">5</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📈</span>
+            <span class="nav-label">Portfolio</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">📰</span>
+            <span class="nav-label">News Feed</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-icon">💡</span>
+            <span class="nav-label">Alerts</span>
+            <span class="badge danger">2</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <!-- Header -->
+        <div class="dashboard-header">
+          <div class="header-title">
+            <h1>Welcome back, John! 👋</h1>
+            <p>Here's what's happening with your stocks today</p>
+          </div>
+          <div class="header-actions">
+            <button class="btn btn-outline-secondary">📊 Export Report</button>
+          </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Portfolio Value</span>
+              <span class="stat-icon">💰</span>
+            </div>
+            <div class="stat-value">₹2,45,000</div>
+            <div class="stat-change positive">↑ +₹12,500 (+5.4%)</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Total Gains</span>
+              <span class="stat-icon">📈</span>
+            </div>
+            <div class="stat-value">₹35,000</div>
+            <div class="stat-change positive">↑ +14.2%</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Today's Change</span>
+              <span class="stat-icon">📊</span>
+            </div>
+            <div class="stat-value">+₹2,450</div>
+            <div class="stat-change positive">↑ +1.0%</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-label">Watchlist Alerts</span>
+              <span class="stat-icon">🔔</span>
+            </div>
+            <div class="stat-value">3</div>
+            <div class="stat-change neutral">New this week</div>
+          </div>
+        </div>
+
+        <!-- Holdings Table -->
+        <div class="table-card">
+          <div class="table-header">
+            <h3 class="table-title">Your Holdings</h3>
+            <button class="btn btn-sm btn-outline-primary">Add Stock</button>
+          </div>
+          <div class="table-wrapper">
+            <table class="holdings-table">
+              <thead>
+                <tr>
+                  <th>Stock</th>
+                  <th>Quantity</th>
+                  <th>Avg Price</th>
+                  <th>Current Price</th>
+                  <th>Gain/Loss</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>TCS</strong><br><span class="text-muted">Tata Consultancy</span></td>
+                  <td>10</td>
+                  <td>₹3,200</td>
+                  <td>₹3,450</td>
+                  <td><span class="positive">+₹2,500 (+7.8%)</span></td>
+                  <td>
+                    <button class="btn-action">⋯</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>INFY</strong><br><span class="text-muted">Infosys</span></td>
+                  <td>20</td>
+                  <td>₹1,800</td>
+                  <td>₹1,890</td>
+                  <td><span class="positive">+₹1,800 (+5.0%)</span></td>
+                  <td>
+                    <button class="btn-action">⋯</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>HDFCBANK</strong><br><span class="text-muted">HDFC Bank</span></td>
+                  <td>15</td>
+                  <td>₹1,600</td>
+                  <td>₹1,567</td>
+                  <td><span class="negative">-₹495 (-2.1%)</span></td>
+                  <td>
+                    <button class="btn-action">⋯</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
